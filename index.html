@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efekomwan Anthony Oriakhi | Front-end Developer</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=picture_as_pdf" />
+</head>
+<body>
+  <header>
+    <h1>Efekomwan Anthony Oriakhi</h1>
+    <p>Web Developer | Front-end Engineering</p>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <button id="theme-toggle">
+      <img id="theme-icon" src="./assets/image/dark-mode.png" alt="Toggle Theme" />
+    </button>
+  </header>
+  <div id="resume-section">
+   <div class="resume-header">
+      <h2>Resume</h2>
+      <p>Efekomwan Anthony Oriakhi</p>
+      <p>Front-end Developer | Web Developer</p>
+    </div> 
+    <div class="resume-content">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> efe.oriakhi3@gmail.com</p>
+        <p><strong>Phone:</strong> +79997602876</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/tonyrich-03">@tonyrich-03</a></p>
+        <p><strong>Portfolio:</strong> <a href="https://your-portfolio-link.com">your-portfolio-link.com</a></p>
+      </div>
+      <!--Professional Summary-->
+      <h2>Professional Summary</h2>
+      <p>Front-end Engineer with a strong foundation in HTML, CSS, JavaScript, and React.js. A graduate of AltSchool of Engineering (2024 - 2025 season) with hands-on experience building responsive, user-friendly web interfaces. Passionate about learning, solving real-world problems, and contributing to innovative teams.</p>
+      <br/>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages & Tools: HTML5, CSS3, JavaScript, TypeScript, React.js, Git, GitHub</li>
+        <li>Frameworks/Libraries: Bootstrap, Tailwind CSS</li>
+        <li>Other Skills: API integration, States Management, Responsive design, Version control, Debugging, UI/UX principles</li>
+        <li>Soft Skills: Team collaboration, Communication, Adaptability, Problem-solving</li>
+      </ul>
+    
+      <h2>Education</h2>
+      <p><strong>AltSchool Africa - School of Engineering</strong>
+       <br>Front-end Engineering Track<br><em>Graduated May 2025</em>
+      </p>
+      <ul>
+        <li>Built fully responsive projects using React</li>
+        <li>Learned best practices in semantic HTML, CSS styling, and state management</li>
+        <li>Collaborated on projects and practiced Agile workflows</li>
+      </ul>
+    
+      <h2>
+       Projects
+       <button class="toggle-projects" onclick="toggleProjects()" aria-expanded="false" aria-controls="projects-list">
+         Show ▼
+       </button>
+      </h2>
+      <ul id="projects-list">
+        <li><strong>Personal Portfolio Website:</strong> Responsive site with theme toggle, filtering, and animations</li>
+        <li><strong>Registration & Login Form:</strong> Secure forms with password toggle and API integration</li>
+        <li><strong>Weather App:</strong> Real-time weather data using OpenWeather API</li>
+        <li><strong>An Otter Essay:</strong> Clean UI with responsive design</li>
+        <li><strong>Todo List App:</strong> Vue.js task manager with CRUD functionality</li>
+        <li><strong>Huckleberry:</strong> Agency-focused web app linking passion and logistics</li>
+        <li><strong>Scissors:</strong> URL shortening tool for optimized online experience</li>
+        <li><strong>WP Pusher Checkout:</strong> WordPress plugin manager with secure checkout</li>
+        <li><strong>Signup Toggle:</strong> Secure user info management with section toggling</li>
+      </ul>
+
+      <h3>Certifications</h3>
+      <p>Front-end Development Certificate – AltSchool Africa (May 2025)</p>
+
+      <h3>Interests</h3>
+      <p>Web app development, open-source contribution, continuous learning, team collaboration</p>
+      <button onclick="generateResumePDF()" class="download-btn">
+        <img
+          src="./assets/image/picture_as_pdf_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="Download Icon"
+          class="material-symbols-outlined"
+        />
+        Download Resume (PDF)
+      </button>
+    </div> 
+  </div>
+
+  <section id="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I build interactive, responsive websites and applications using modern web technologies.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     My name is Efekomwan Anthony Oriakhi, a Front-end Engineer passionate about crafting visually appealing 
+     and user-friendly web experiences. My journey started with the fundamentals of HTML, CSS, JavaScript, Vue.js, 
+     and evolved into building complex applications with React.js. I enjoy solving problems and turning ideas 
+     into digital products.
+     With 1 year of experience, I have worked on various projects, including Todo-list App, WP Pusher Checkout, 
+     Huckleberry, Scissors, Slide Gallery, .
+    </p>
+  </section>
+
+  <section id="skill">
+    <h2>Skill</h2>
+    <div class="skill-card">
+      <div class="skill-card-content">
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML Icon"/>
+          <button>HTML</button>
+          <span>
+           [ Markup Language (HTML)
+           Proficient in HTML for structuring web content.]
+          </span>
+        </div>
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Icon"/>
+          <button>CSS</button>
+          <span>
+           [ Styling Language (CSS)
+           Proficient in CSS for styling and layout design.]
+          </span>
+        </div>
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript Icon"/>
+          <button>JavaScript</button>
+          <span>
+           [ Programming Language (JavaScript)
+           Proficient in JavaScript for building interactive web applications.]
+          </span>
+        </div>
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React.js Icon"/>
+          <button>React.js</button>
+          <span>
+           [ Front-end Framework (React.js)
+           Proficient in building dynamic user interfaces with React.js.]
+          </span>
+        </div>
+        <div class="skill-card-item">
+         <img src="https://img.icons8.com/color/48/000000/vue-js.png" alt="Vue.js Icon"/>
+         <button>Vue.js</button> 
+         <span>
+           [ Front-end Framework (Vue.js)
+           Proficient in building dynamic user interfaces with Vue.js.] 
+          </span>
+        </div>
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git Icon"/>
+          <button>Git</button>
+          <span>
+           [ Version Control (Git)
+           Experienced in using Git for version control and collaboration.]
+          </span>
+        </div>
+        <div class="skill-card-item">
+          <img src="https://img.icons8.com/color/48/000000/api.png" alt="API Icon"/>
+          <button>API</button>
+          <span>
+           [ API Integration
+           Experienced in integrating RESTful APIs into web applications.]
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Here are some of my recent projects. Click on the buttons to view them.</p>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="ui">UI Design</button>
+    </div>
+
+    <div class="project-gallery">
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/project1.jpg" alt="Project 1" />
+       <h3>Portfolio Website</h3>
+       <button class="view-project" data-project="1">View</button>
+       <a href="https://efekomwananthony.github.io/Portfolio-Website/"><button>View project</button></a>
+      </div>
+      <div class="project-card" data-category="ui">
+        <img src="./assets/image/project2.jpg" alt="Project 2" />
+        <h3>UI Redesign</h3>
+        <button class="view-project" data-project="2">View</button>
+        <a href="https://efekomwananthony.github.io/Assignment-2/"><button>View project</button></a>
+      </div>
+      <!-- Add more cards similarly -->
+      <div class="project-card" data-category="ui">
+       <img src="./assets/image/Screenshot 2025-05-24 031104.png" alt="Project 3" />
+       <h3>An Otter Essay</h3>
+       <button class="view-project" data-project="3">View</button>
+       <a href="https://test-bay-six-76.vercel.app/Assignment%201/"><button>View project</button></a>
+      </div>
+      <div class="project-card" data-category="ui">
+       <img src="./assets/image/Screenshot 2025-05-25 223608.png" alt="Project 4" />
+       <h3>Weather App</h3>
+       <button class="view-project" data-project="4">View</button>
+       <a href="https://tonyrich-03.vercel.app/"><button>View project</button></a>
+      </div>
+      
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-24 034115.png" alt="Project 5" />
+       <h3>Todo List App</h3>
+       <button class="view-project" data-project="5">View</button>
+       <a href="https://jet11vue.vercel.app/"><button>View project</button></a>
+      </div>
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-24 032403.png" alt="Project 6" />
+       <h3>Huckleberry</h3>
+       <button class="view-project" data-project="6">View</button>
+       <a href="https://test-bay-six-76.vercel.app/Assignment%202/"><button>View project</button></a>
+      </div>
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-24 033711.png" alt="Project 7" />
+       <h3>Scissors</h3>
+       <button class="view-project" data-project="7">View</button>
+       <a href="https://test-bay-six-76.vercel.app/Assignment%206/"><button>View project</button></a>
+      </div>
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-26 133545.png" alt="Project 8" />
+       <h3>Slide Gallery</h3>
+       <button class="view-project" data-project="8">View</button>
+       <a href="https://jet-slide.vercel.app/"><button>view project</button></a>
+      </div>
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-24 034458.png" alt="Project 9" />
+       <h3>WP Pusher Checkout</h3>
+       <button class="view-project" data-project="9">View</button>
+       <a href="https://test-bay-six-76.vercel.app/Assignment%205/"><button>view project</button></a>
+      </div>
+      <div class="project-card" data-category="web">
+       <img src="./assets/image/Screenshot 2025-05-24 034847.png" alt="Project 10" />
+       <h3>Signup Toggle</h3>
+       <button class="view-project" data-project="10">View</button>
+       <a href="https://efe-anthony-oriakhi.vercel.app/"><button>view project</button></a>
+      </div>
+      <div id="project-popup" class="popup hidden">
+       <div class="popup-content">
+         <span class="close">&times;</span>
+         <h2 id="popup-title">Project Title</h2>
+         <p id="popup-description">Project description goes here...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:efe.oriakhi3@gmail.com">efe.oriakhi3@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/efekomwananthony" target="_blank">@efekomwananthony</a></p>
+    <p>GitHub: <a href="https://github.com/tonyrich-03" target="_blank">@tonyrich-03</a></p>
+    <p>Twitter: <a href="https://x.com/EfeAnthony" target="_blank">@EfeAnthony</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/oriakhi_anthony/" target="_blank">@oriakhi_anthony</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Efekomwan Anthony Oriakhi. All rights reserved.</p>
+  </footer>
+
+  <audio id="toggle-sound" src="./assets/sounds/808228__logicogonist__snare-dw-1.wav" preload="auto"></audio>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+ </body>
+</html>
